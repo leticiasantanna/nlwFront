@@ -1,3 +1,5 @@
 export interface IHomeProps {
-  count: number;
+  poolsCount: number;
+  guessCount: number;
+  userCount: number;
 }
