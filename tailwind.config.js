@@ -6,6 +6,20 @@ module.exports = {
       fontFamily: {
         sans: "Ubuntu, sans-serif",
       },
+
+      backgroundImage: {
+        web: "url(/background.png)",
+      },
+
+      colors: {
+        softGreen: {
+          500: "#129E57",
+        },
+
+        nlwYellow: {
+          500: "#F7DD43",
+        },
+      },
     },
   },
   plugins: [],
