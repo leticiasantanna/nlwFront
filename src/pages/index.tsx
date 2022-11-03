@@ -2,11 +2,11 @@ import { IHomeProps } from "../types/home";
 import Image from "next/image";
 
 import phones from "../assets/phones.png";
-import logo from "../assets/logo.svg";
 import users from "../assets/avatares.png";
 import icon from "../assets/icongreen.svg";
 import { api } from "../lib/axios";
 import { FormEvent, useState } from "react";
+import Header from "../components/header";
 
 export default function Home(props: IHomeProps) {
   const [poolName, setPoolName] = useState("");
@@ -33,10 +33,9 @@ export default function Home(props: IHomeProps) {
   return (
     <div className="max-w-[1124px] h-screen mx-auto grid grid-cols-2 items-center gap-28">
       <main>
-        <Image src={logo} alt="logo NLW Copa" />
-
+        <Header />
         <h1 className="mt-14 text-green-500 text-5xl font-bold leading-tight">
-          Façam suas apostas! Nesse bolão da Copa, compartilhe com seus amigos e
+          Façam suas apostas! Nesse bolão da Copa. Compartilhe com seus amigos e
           veja quem é melhor de palpite
         </h1>
 
